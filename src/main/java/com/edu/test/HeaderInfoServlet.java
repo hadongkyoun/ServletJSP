@@ -21,6 +21,8 @@ public class HeaderInfoServlet extends HttpServlet{
 		while (em.hasMoreElements()) {
 			String s = em.nextElement();
 			out.println(s + " : " + req.getHeader(s) + "<br/>");
+			
+			
 		}
 		out.print("</body></html>");
 		out.close();
