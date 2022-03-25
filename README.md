@@ -1,3 +1,5 @@
+I build this Repository again because last one had some Errors.
+
 # Ultimate goal : make Digital Diary Library
 ## So, what is it?
 
