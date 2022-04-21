@@ -16,10 +16,10 @@ public class ErrorTest1Servlet extends HttpServlet{
 			String getquery = req.getQueryString();
 			out.print("Query :"+getquery+"<br>");
 			out.print("Query 길이 : "+getquery.length());
-			out.print("Done!");
-		}catch(NullPointerException e) {
-			System.out.println("null 참조 오류발생");
+		}catch(Exception e) {
+			out.println("요청을 처리하는 동안 오류가 발생하였습니다 : "+ e);
 		}
+		out.print("<br>Done!");
 		out.close();
 	}
 }
